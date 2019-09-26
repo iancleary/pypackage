@@ -1,0 +1,11 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[tool.flit.metadata]
+module = "{{cookiecutter.repo_name}}"
+author = "{{cookiecutter.full_name}}"
+author-email = "{{cookiecutter.full_name}}"
+home-page = "https://{{cookiecutter.github_url}}/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}"
+classifiers = ["License :: OSI Approved :: MIT License"]
+
