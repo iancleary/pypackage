@@ -3,5 +3,5 @@
 set -e
 set -x
 
-pytest --cov=template_module --cov=tests --cov-report=term-missing ${@}
+pytest --cov={{cookiecutter.project_name}} --cov=tests --cov-report=term-missing ${@}
 bash ./scripts/lint.sh
