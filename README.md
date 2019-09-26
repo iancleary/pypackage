@@ -15,9 +15,9 @@ This is a template module collecting many utilities I have liked from other proj
 ## Getting started with this template
 
 ```bash
-$ cookiecutter https://github.com/{{cookiecutter.github_user}}/cookiecutter-pypackage
+$ cookiecutter https://github.com/iancleary/cookiecutter-pypackage
 # For the sake of brevity, repos on GitHub can just use the 'gh' prefix
-$ cookiecutter gh:{{cookiecutter.github_user}}/cookiecutter-pypackage
+$ cookiecutter gh:iancleary/cookiecutter-pypackage
 
 ```
 
