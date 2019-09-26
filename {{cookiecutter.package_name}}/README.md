@@ -1,4 +1,4 @@
-# {{cookiecutter.package_name}
+# {{cookiecutter.package_name}}
 
 [![Build Status](https://img.shields.io/travis/com/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}/master.svg)](https://img.shields.io/travis/com/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}})
 [![image](https://img.shields.io/pypi/v/{{cookiecutter.package_name}}.svg)](https://pypi.org/project/{{cookiecutter.repo_name}}/)
