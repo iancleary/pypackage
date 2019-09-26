@@ -3,6 +3,7 @@
 ## The Basic Idea
 
 This is a template module collecting many utilities I have liked from other projects, to serve as a personal reference.
+
 - [https://github.com/tiangolo/fastapi/](https://github.com/tiangolo/fastapi/)
 - [https://github.com/cookiecutter/cookiecutter](https://github.com/cookiecutter/cookiecutter)
 
