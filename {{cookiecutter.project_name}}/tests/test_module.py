@@ -1,5 +1,5 @@
 # package imports
-from {{cookiecutter.project_name}}.module import Human
+from {{cookiecutter.package_name}}.module import Human
 
 
 def test_human():
