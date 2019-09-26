@@ -20,6 +20,19 @@ $ cookiecutter https://github.com/iancleary/cookiecutter-pypackage
 # For the sake of brevity, repos on GitHub can just use the 'gh' prefix
 $ cookiecutter gh:iancleary/cookiecutter-pypackage
 
+# cd into your newly created directory
+
+# ensure you have pipenv installed
+pip install --user pipenv
+
+# install all dependencies (including dev)
+pipenv install --dev
+
+# start a shell in pipenv
+pipenv shell
+
+# develop!
+
 ```
 
 ## Example Usage
