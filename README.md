@@ -17,6 +17,16 @@ $ cookiecutter https://github.com/iancleary/cookiecutter-pypackage
 $ cookiecutter gh:iancleary/cookiecutter-pypackage
 ```
 
+## Features
+
+- pipenv (sane virtualenv)
+- black (linting/formatter)
+- autoflake (removing unused packages)
+- isort (dependency organization)
+- mypy (static type checking)
+- pytest (including test coverage)
+- travis-ci for CI/CD
+
 Only **Python 3.6+** is supported as required by the black, pydantic packages
 
 ----------
