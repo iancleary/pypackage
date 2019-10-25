@@ -1,10 +1,14 @@
 # Cookiecutter python module
 
+[![Build Status](https://img.shields.io/travis/com/iancleary/cookiecutter-pypackage/master.svg)](https://img.shields.io/travis/com/iancleary/cookiecutter-pypackage)
+[![image](https://img.shields.io/github/contributors/iancleary/cookiecutter-pypackage.svg)](https://github.com/iancleary/cookiecutter-pypackage/graphs/contributors)
+
 ## The Basic Idea
 
 This is a template module collecting many utilities I have liked from other projects, to serve as a personal reference.
 
 - [https://github.com/tiangolo/fastapi/](https://github.com/tiangolo/fastapi/)
+- [https://github.com/tiangolo/full-stack-fastapi-postgresql](https://github.com/tiangolo/full-stack-fastapi-postgresql)
 - [https://github.com/cookiecutter/cookiecutter](https://github.com/cookiecutter/cookiecutter)
 
 ## Getting started with this template
