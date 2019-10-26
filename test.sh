@@ -11,5 +11,6 @@ cd ./samplemod
 
 pipenv install --dev
 pipenv run bash ./scripts/test.sh
+pipenv run bash ./scripts/build-docs.sh
 
 cd ../

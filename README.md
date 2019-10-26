@@ -1,7 +1,7 @@
-# Cookiecutter python module
+# Rapid python package setup with modern venv, dependencies, testing, docs, and CI
 
-[![Build Status](https://img.shields.io/travis/com/iancleary/cookiecutter-pypackage/master.svg)](https://img.shields.io/travis/com/iancleary/cookiecutter-pypackage)
-[![image](https://img.shields.io/github/contributors/iancleary/cookiecutter-pypackage.svg)](https://github.com/iancleary/cookiecutter-pypackage/graphs/contributors)
+[![Build Status](https://img.shields.io/travis/com/iancleary/pypackage/master.svg)](https://img.shields.io/travis/com/iancleary/pypackage)
+[![image](https://img.shields.io/github/contributors/iancleary/pypackage.svg)](https://github.com/iancleary/pypackage/graphs/contributors)
 
 ## The Basic Idea
 
@@ -16,9 +16,9 @@ This is a template module collecting many utilities I have liked from other proj
 ```bash
 pip install --user cookiecutter
 
-$ cookiecutter https://github.com/iancleary/cookiecutter-pypackage
+$ cookiecutter https://github.com/iancleary/pypackage
 # For the sake of brevity, repos on GitHub can just use the 'gh' prefix
-$ cookiecutter gh:iancleary/cookiecutter-pypackage
+$ cookiecutter gh:iancleary/pypackage
 ```
 
 ## Features
