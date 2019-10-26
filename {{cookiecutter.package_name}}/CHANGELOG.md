@@ -1,3 +1,3 @@
-# v0.0.1
+# v{{cookiecutter.version}}
 
 - Conception!
