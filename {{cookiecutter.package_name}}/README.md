@@ -66,9 +66,3 @@ Using the flit package
 ./scripts/deploy.sh
 # TBD detail about flit setup
 ```
-
-----------
-
-## Contributing Guide
-
-See the [Contributing Guide](CONTRIBUTING.md) and welcome!
