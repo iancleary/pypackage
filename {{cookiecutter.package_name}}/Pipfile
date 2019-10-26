@@ -13,6 +13,8 @@ pytest-cov = "*"
 isort = "*"
 flit = "*"
 autoflake = "*"
+mkdocs = "*"
+mkdocs-material = "*"
 
 [packages]
 pydantic = "==0.32.2"

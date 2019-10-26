@@ -3,7 +3,7 @@
     "email": "iancleary@pm.me",
     "github_url": "github.com",
     "github_user": "iancleary",
-    "repo_name": "samplemod",
+    "repo_name": "cookiecutter-pypackage",
     "package_name": "samplemod",
     "package_short_description": "Refreshingly simple new project generation.",
     "year": "2019",

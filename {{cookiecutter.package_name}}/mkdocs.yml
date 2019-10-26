@@ -1,0 +1,13 @@
+site_name: {{cookiecutter.package_name}}
+site_description: {{cookiecutter.package_short_description}}
+site_url: https://{{cookiecutter.github_url}}/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}
+
+theme:
+    name: 'material'
+
+repo_name: {{cookiecutter.github_user}}/{{cookiecutter.repo_name}}
+repo_url: https://{{cookiecutter.github_url}}/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}
+edit_uri: ''
+
+nav:
+    - {{cookiecutter.package_name}}: 'index.md'
