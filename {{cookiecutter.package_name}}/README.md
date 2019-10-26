@@ -13,14 +13,27 @@ This is a template module collecting many utilities I have liked from other proj
 - [https://github.com/tiangolo/fastapi/](https://github.com/tiangolo/fastapi/)
 - [https://github.com/cookiecutter/cookiecutter](https://github.com/cookiecutter/cookiecutter)
 
-## Getting started with this template
+## Features
+
+- pipenv (sane virtualenv)
+- black (linting/formatter)
+- autoflake (removing unused packages)
+- isort (dependency organization)
+- mypy (static type checking)
+- pytest (including test coverage)
+- travis-ci for CI/CD
+
+## Installing {{cookiecutter.package_name}}
+
+Install the latest release:
 
 ```bash
-$ cookiecutter https://github.com/iancleary/cookiecutter-pypackage
-# For the sake of brevity, repos on GitHub can just use the 'gh' prefix
-$ cookiecutter gh:iancleary/cookiecutter-pypackage
+pip install {{cookiecutter.package_name}}
+```
 
-# cd into your newly created directory
+Or you can clone `{{cookiecutter.package_name}}` and get started locally
+
+```bash
 
 # ensure you have pipenv installed
 pip install --user pipenv
@@ -43,15 +56,16 @@ import {{cookiecutter.package_name}}
 # do stuff
 ```
 
-## Installing {{cookiecutter.package_name}}
+Only **Python 3.6+** is supported as required by the black, pydantic packages
 
-Install the latest release:
+## Deploying to PyPi
+
+Using the flit package
 
 ```bash
-pip install {{cookiecutter.package_name}}
+./scripts/deploy.sh
+# TBD detail about flit setup
 ```
-
-Only **Python 3.6+** is supported as required by the black, pydantic packages
 
 ----------
 
