@@ -30,6 +30,7 @@ $ cookiecutter gh:iancleary/pypackage
 - mypy (static type checking)
 - pytest (including test coverage)
 - travis-ci for CI/CD
+- mkdocs for documentation (with material theme)
 
 Only **Python 3.6+** is supported as required by the black, pydantic packages
 
