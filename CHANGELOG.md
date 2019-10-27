@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- changelog version generation with YYYY-MM-DD date format
+- flit pyproject.toml fixes and additional metadata
+
 ## [0.2.0] - 2019-11-25
 
 ### Added
