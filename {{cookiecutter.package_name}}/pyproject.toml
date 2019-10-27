@@ -3,9 +3,38 @@ requires = ["flit"]
 build-backend = "flit.buildapi"
 
 [tool.flit.metadata]
-module = "{{cookiecutter.repo_name}}"
+module = "{{cookiecutter.package_name}}"
 author = "{{cookiecutter.full_name}}"
-author-email = "{{cookiecutter.full_name}}"
+author-email = "{{cookiecutter.email}}"
 home-page = "https://{{cookiecutter.github_url}}/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}"
-classifiers = ["License :: OSI Approved :: MIT License"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3 :: Only",
+]
+requires = [
+    "pydantic >=0.32.2,<=0.32.2"
+]
+description-file = "README.md"
+requires-python = ">=3.6"
 
+[tool.flit.metadata.urls]
+Documentation = "https://{{cookiecutter.github_url}}/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}"
+
+[tool.flit.metadata.requires-extra]
+test = [
+    "pytest >=4.0.0",
+    "pytest-cov",
+    "mypy",
+    "black",
+    "isort",
+    "autoflake"
+]
+doc = [
+    "mkdocs",
+    "mkdocs-material",
+    "markdown-include"
+]
