@@ -3,11 +3,11 @@
 # Exit in case of error
 set -e
 
-rm -rf ./samplemod
+rm -rf ./pypackage
 
 cookiecutter --config-file ./testing-config.yml --no-input -f ./
 
-cd ./samplemod
+cd ./pypackage
 
 pipenv install --dev
 pipenv run bash ./scripts/test.sh
