@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - changelog version generation with YYYY-MM-DD date format
 - flit pyproject.toml fixes and additional metadata
+- fixed created folder name (should be repo_name, was package_name)
 
 ## [0.2.0] - 2019-11-25
 
