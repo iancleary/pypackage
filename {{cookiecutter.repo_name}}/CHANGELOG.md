@@ -11,5 +11,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Conception!
 
-[Unreleased]: https://github.com/iancleary/pypackage/compare/v{{cookiecutter.version}}...HEAD
-[{{cookiecutter.version}}]: https://github.com/iancleary/pypackage/releases/tag/v{{cookiecutter.version}}
+[Unreleased]: https://{{cookiecutter.github_url}}/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}/compare/v{{cookiecutter.version}}...HEAD
+[{{cookiecutter.version}}]: https://{{cookiecutter.github_url}}/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}/releases/tag/v{{cookiecutter.version}}
