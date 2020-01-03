@@ -8,9 +8,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.0] - 2020-01-03
+
 - changelog version generation with YYYY-MM-DD date format
 - flit pyproject.toml fixes and additional metadata
 - fixed created folder name (should be repo_name, was package_name)
+- added Makefile as entry point
+- added .vscode recommended extensions
+- added setup.py
+- corrected .gitingore for above and install* make targets
 
 ## [0.2.0] - 2019-11-25
 
@@ -24,6 +30,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Conception!
 
-[Unreleased]: https://github.com/iancleary/pypackage/compare/v0.2.0...HEAD
+[Unreleased]: https://github.com/iancleary/pypackage/compare/v0.3.0...HEAD
+[0.3.0]: https://github.com/iancleary/pypackage/releases/tag/v0.3.0
 [0.2.0]: https://github.com/iancleary/pypackage/releases/tag/v0.2.0
 [0.1.0]: https://github.com/iancleary/pypackage/releases/tag/v0.1.0
