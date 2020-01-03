@@ -10,7 +10,7 @@ Please note we have a code of conduct, please follow it in all your interactions
 - Read the documentation (working on adding more)
 - create the minimally reproducible issue
 - try to edit the relevant code and see if it fixes it
-- submit the fix to the provlem as a pull request 
+- submit the fix to the provlem as a pull request
 - include an explanation of what you did and why
 
 ## First steps to contribute new features
@@ -42,7 +42,7 @@ scripts/format.sh
    variables, function names, decorators, etc..
 4. Increase the version numbers in any examples files and the README.md to the new version that this
    Pull Request would represent. The versioning scheme we use is [SemVer](http://semver.org/).
-5. You may merge the Pull Request in once you have the sign-off of another developers, or if you 
+5. You may merge the Pull Request in once you have the sign-off of another developers, or if you
    do not have permission to do that, you may request the reviewer to merge it for you.
 
 ---

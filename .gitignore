@@ -1,7 +1,6 @@
 .idea
 .ipynb_checkpoints
 .mypy_cache
-.vscode
 __pycache__
 .pytest_cache
 htmlcov
@@ -13,4 +12,8 @@ coverage.xml
 test.db
 log.txt
 Pipfile.lock
-pypackage
+build/
+*.egg-info/
+
+# OS X
+.DS_Store
