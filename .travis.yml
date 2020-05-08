@@ -1,4 +1,13 @@
-dist: xenial
+---
+version: ~> 1.0
+# for validation of this file
+
+# 18.04
+dist: bionic
+
+branches:
+  only:
+    - master
 
 language: python
 
