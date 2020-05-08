@@ -34,8 +34,8 @@ Or you can clone `{{cookiecutter.package_name}}` and get started locally
 
 ```bash
 
-# ensure you have pipenv installed
-pip install --user pipenv
+# ensure you have Poetry installed
+pip install --user poetry
 
 # install all dependencies (including dev)
 poetry install

@@ -14,7 +14,7 @@ This is a template module collecting many utilities I have liked from other proj
 
 ## Features
 
-- poetry (sane virtualenv)
+- Poetry (virtual environment and publish, all with one tool)
 - black (linting/formatter)
 - autoflake (removing unused packages)
 - isort (dependency organization)
@@ -34,8 +34,8 @@ Or you can clone `{{cookiecutter.package_name}}` and get started locally
 
 ```bash
 
-# ensure you have pipenv installed
-pip install --user pipenv
+# ensure you have Poetry installed
+pip install --user poetry
 
 # install all dependencies (including dev)
 poetry install
