@@ -2,7 +2,6 @@
 
 [![Build Status](https://img.shields.io/travis/com/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}/master.svg)](https://img.shields.io/travis/com/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}})
 [![image](https://img.shields.io/pypi/v/{{cookiecutter.package_name}}.svg)](https://pypi.org/project/{{cookiecutter.repo_name}}/)
-[![Updates](https://pyup.io/repos/github/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}/shield.svg)](https://pyup.io/repos/github/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}/)
 [![image](https://img.shields.io/pypi/l/{{cookiecutter.package_name}}.svg)](https://pypi.org/project/{{cookiecutter.package_name}}/)
 [![image](https://img.shields.io/pypi/pyversions/{{cookiecutter.package_name}}.svg)](https://pypi.org/project/{{cookiecutter.package_name}}/)
 [![image](https://img.shields.io/github/contributors/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}.svg)](https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}/graphs/contributors)
@@ -15,7 +14,7 @@ This is a template module collecting many utilities I have liked from other proj
 
 ## Features
 
-- pipenv (sane virtualenv)
+- poetry (sane virtualenv)
 - black (linting/formatter)
 - autoflake (removing unused packages)
 - isort (dependency organization)
@@ -35,14 +34,11 @@ Or you can clone `{{cookiecutter.package_name}}` and get started locally
 
 ```bash
 
-# ensure you have pipenv installed
-pip install --user pipenv
+# ensure you have Poetry installed
+pip install --user poetry
 
 # install all dependencies (including dev)
-pipenv install --dev
-
-# start a shell in pipenv
-pipenv shell
+poetry install
 
 # develop!
 
@@ -60,9 +56,8 @@ Only **Python 3.6+** is supported as required by the black, pydantic packages
 
 ## Deploying to PyPi
 
-Using the flit package
+Using the poetry package
 
 ```bash
 ./scripts/deploy.sh
-# TBD detail about flit setup
 ```

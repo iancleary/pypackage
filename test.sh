@@ -5,12 +5,12 @@ set -e
 
 rm -rf ./pypackage
 
-cookiecutter --config-file ./testing-config.yml --no-input -f ./
+cookiecutter --config-file ./config-travis-testing.yml --no-input -f ./
 
 cd ./pypackage
 
-pipenv install --dev
-pipenv run bash ./scripts/test.sh
-pipenv run bash ./scripts/build-docs.sh
+poetry install
+bash ./scripts/test.sh
+bash ./scripts/build-docs.sh
 
 cd ../
