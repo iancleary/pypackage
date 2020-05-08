@@ -8,6 +8,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Poetry 
+
+### Removed
+
+- Pipfile
+- stale files `scripts/deploy.sh` and `setup.py`
+- Pyup badges
+
 ## [0.3.0] - 2020-01-03
 
 - changelog version generation with YYYY-MM-DD date format

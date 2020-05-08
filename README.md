@@ -23,7 +23,7 @@ $ cookiecutter gh:iancleary/pypackage
 
 ## Features
 
-- pipenv (sane virtualenv)
+- Poetry (virtual environment and publish, all with one tool)
 - black (linting/formatter)
 - autoflake (removing unused packages)
 - isort (dependency organization)

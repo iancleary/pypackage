@@ -16,6 +16,21 @@ help:
 # adds anything that has a double # comment to the phony help list
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ".:*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 
+python-three-six:
+python-three-six: ## setup python3.6 virtual environment using poetry
+	poetry env use python3.6
+	poetry install
+
+python-three-seven:
+python-three-seven: ## setup python3.7 virtual environment using poetry
+	poetry env use python3.7
+	poetry install
+
+python-three-eight:
+python-three-eight: ## setup python3.6 virtual environment using poetry
+	poetry env use python3.8
+	poetry install
+
 lint: ## lint the code
 lint:
 	bash scripts/lint.sh
@@ -41,14 +56,5 @@ deploy-docs:
 
 install: ## uninstall and install package with python
 install:
-	echo y | pip uninstall {{cookiecutter.package_name}}
-	python setup.py build
-	python setup.py install
-
-install-editable: ## uninstall and install package with python, editable
-install-editable:
-	# https://pip.pypa.io/en/stable/reference/pip_install/#editable-installs
-	echo y | pip uninstall {{cookiecutter.package_name}}
-	python setup.py build
-	python setup.py develop
-	# python -m pip install -e .
+	poetry remove ./{{cookiecutter.package_name}}
+	poetry add ./{{cookiecutter.package_name}}

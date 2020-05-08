@@ -16,7 +16,7 @@ matrix:
 
 install:
   - pip install cookiecutter
-  - pip install pipenv --upgrade-strategy=only-if-needed
+  - pip install poetry
 
 script:
 - bash ./test.sh
