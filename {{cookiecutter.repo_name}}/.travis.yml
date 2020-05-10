@@ -7,23 +7,16 @@ cache: pip
 python:
     - "3.6"
     - "3.7"
-    - "3.8-dev"
+    - "3.8"
     - "nightly"
 
 matrix:
     allow_failures:
-        - python: "3.8-dev"
         - python: "nightly"
 
-before_install:
-    # Install Poetry
-    - curl -fsS -o get-poetry.py https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py
-    - python get-poetry.py -y
-    - echo "::set-env name=PATH::$HOME/.poetry/bin:$PATH"
-
 install:
-    - pip install flit
-    - flit install --symlink
+    - pip install poetry
+    - poetry install
 
 script:
     - bash scripts/test.sh
