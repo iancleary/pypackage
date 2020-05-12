@@ -33,6 +33,7 @@ script:
 deploy:
   provider: script
   script: pwd && ls && bash deploy-test-pypi.sh
+  skip_cleanup: true
   on:
     #tags: true
     all_branches: true

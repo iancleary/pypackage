@@ -9,10 +9,12 @@ set -e
 echo "poetry config repositories.pypi https://test.pypi.org/simple/"
 poetry config repositories.pypi https://test.pypi.org/simple/
 
-# Run deploy script
-echo "cookiecutter --config-file ./config-travis-testing.yml --no-input -f ./"
-cookiecutter --config-file ./config-travis-testing.yml --no-input -f ./
+# Logging
+pwd
 ls
+
+# Run Deploy Script
+echo "cd ./pypackage"
 cd ./pypackage
-ls
+echo "bash ./scripts/publish.sh"
 bash ./scripts/publish.sh
