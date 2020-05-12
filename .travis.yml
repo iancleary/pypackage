@@ -29,3 +29,10 @@ install:
 
 script:
 - bash ./test.sh
+
+deploy:
+  provider: script
+  script: poetry config repositories.pypi https://test.pypi.org/simple/ && cd iancleary-pypackage && bash scripts/deploy.sh
+  on:
+    tags: true
+    python: "3.6"

@@ -36,6 +36,20 @@ Only **Python 3.6+** is supported as required by the black, pydantic packages
 
 ----------
 
+## Publishing to Pypi
+
+Login to pypi and create a token.
+
+<https://python-poetry.org/docs/repositories/#configuring-credentials>
+
+```bash
+POETRY_PYPI_TOKEN_PYPI=my-token
+```
+
+Login to travis-ci.com to add an environment variable:
+
+![Travis-CI setup of Poetry token environment variable](images/travis-ci_poetry-env-variable.png)
+
 ## Contributing Guide
 
 See the [Contributing Guide](CONTRIBUTING.md) and welcome!
