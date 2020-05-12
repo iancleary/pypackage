@@ -16,5 +16,10 @@ ls
 # Run Deploy Script
 echo "cd ./pypackage"
 cd ./pypackage
+
+# Logging
+pwd
+ls
+
 echo "bash ./scripts/publish.sh"
 bash ./scripts/publish.sh
