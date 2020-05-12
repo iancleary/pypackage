@@ -32,7 +32,7 @@ script:
 
 deploy:
   provider: script
-  script: bash deploy-test-pypi.sh
+  script: pwd && ls && bash deploy-test-pypi.sh
   on:
     #tags: true
     all_branches: true

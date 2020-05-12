@@ -8,6 +8,5 @@ poetry config pypi-token.pypi my-token
 # Setup to use test Pypi and not real pypi (don't do this in the actual package)
 poetry config repositories.pypi https://test.pypi.org/simple/
 
-# Change into folder (repo name)
-cd pypackage
+# Run deploy script
 bash scripts/deploy.sh
