@@ -34,5 +34,6 @@ deploy:
   provider: script
   script: poetry config repositories.pypi https://test.pypi.org/simple/ && cd iancleary-pypackage && bash scripts/deploy.sh
   on:
-    tags: true
+    #tags: true
+    all_branches: true
     python: "3.6"
