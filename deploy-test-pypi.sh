@@ -3,9 +3,8 @@
 # Exit in case of error
 set -e
 
-# Setup to use token (do this in the actual package)
-echo "poetry config pypi-token.pypi my-token"
-poetry config pypi-token.pypi my-token
+# Token is pulled from the environment variable POETRY_PYPI_TOKEN_PYPI
+
 # Setup to use test Pypi and not real pypi (don't do this in the actual package)
 echo "poetry config repositories.pypi https://test.pypi.org/simple/"
 poetry config repositories.pypi https://test.pypi.org/simple/
