@@ -4,5 +4,4 @@ set -e
 
 # https://python-poetry.org/docs/libraries/
 # https://python-poetry.org/docs/cli/#publish
-poetry build
-poetry publish
+poetry publish  --build

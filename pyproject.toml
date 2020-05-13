@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "pypackage"
+version = "0.0.0"
+description = "Demo file to show equivalence of Github Actions between Cookiecutter and root folder"
+authors = ["Ian Cleary <iancleary@pm.me>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+cookiecutter = "^1.7.2"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

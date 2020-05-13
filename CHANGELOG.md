@@ -12,12 +12,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Poetry
 - Publishing to test.pypi.org
+- Github Actions Workflows for publishing, testing, and issue management
 
 ### Removed
 
 - Pipfile
 - stale files `scripts/deploy.sh` and `setup.py`
 - Pyup badges
+- Travis-CI
 
 ## [0.3.0] - 2020-01-03
 
