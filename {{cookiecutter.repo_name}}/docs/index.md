@@ -109,10 +109,9 @@ jobs:
       ...
       - name: Publish
         env:
-          PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
+          PYPI_TOKEN: ${{ "{{" }} secrets.PYPI_TOKEN {{ "}}" }}
         run: |
           poetry config pypi-token.pypi $PYPI_TOKEN
-          poetry config repositories.pypi https://test.pypi.org/simple/
           bash scripts/publish.sh
 ```
 
