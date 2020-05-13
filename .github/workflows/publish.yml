@@ -38,4 +38,7 @@ jobs:
         run: |
           poetry config pypi-token.pypi $PYPI_TOKEN
           poetry config repositories.pypi https://test.pypi.org/simple/
+          bash scripts/test.sh
+          cd pypackage
+          pwd
           bash scripts/publish.sh
