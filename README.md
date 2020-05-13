@@ -65,6 +65,8 @@ Go to your repo settings and add a `PYPI_TOKEN` environment variable:
 
 ### Inspect the GitHub Actions Publish Workflows
 
+> Within the cookiecutter project!
+
 ```yml
 name: Publish
 
@@ -86,13 +88,14 @@ jobs:
           PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
         run: |
           poetry config pypi-token.pypi $PYPI_TOKEN
-          poetry config repositories.pypi https://test.pypi.org/simple/
           bash scripts/publish.sh
 ```
 
 > That's it!
 
 When you make a release on GitHub, the publish workflow will run and deploy to PyPi! 🚀🎉😎
+
+> The GitHub Actions for the top level intentionally on build, which demonstrates the publish workflow.
 
 ## Contributing Guide
 

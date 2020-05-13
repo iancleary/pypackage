@@ -37,7 +37,6 @@ jobs:
           PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
         run: |
           poetry config pypi-token.pypi $PYPI_TOKEN
-          poetry config repositories.pypi https://test.pypi.org/simple/
           poetry run bash scripts/test.sh
           cd pypackage
-          bash scripts/publish.sh
+          poetry build
