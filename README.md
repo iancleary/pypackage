@@ -1,14 +1,23 @@
-# Rapid python package setup with modern venv, dependencies, testing, docs, and CI
+# pypackage
 
-[![Build Status](https://img.shields.io/travis/com/iancleary/pypackage/master.svg)](https://img.shields.io/travis/com/iancleary/pypackage)
-[![image](https://img.shields.io/github/contributors/iancleary/pypackage.svg)](https://github.com/iancleary/pypackage/graphs/contributors)
+<p align="center">
+    <em>Rapid python package setup with modern venv, dependencies, testing, docs, and CI</em>
+</p>
+
+<p align="center">
+<a href="https://github.com/iancleary/pypackage/actions?query=workflow%3ATest" target="_blank">
+    <img src="https://github.com/iancleary/pypackage/workflows/Test/badge.svg" alt="Test">
+</a>
+<a href="https://github.com/iancleary/pypackage/actions?query=workflow%3APublish" target="_blank">
+    <img src="https://github.com/iancleary/pypackage/workflows/Publish/badge.svg" alt="Publish">
+</a>
+</p>
 
 ## The Basic Idea
 
 This is a template module collecting many utilities I have liked from other projects, to serve as a personal reference.
 
-- [https://github.com/tiangolo/fastapi/](https://github.com/tiangolo/fastapi/)
-- [https://github.com/tiangolo/full-stack-fastapi-postgresql](https://github.com/tiangolo/full-stack-fastapi-postgresql)
+- [https://github.com/tiangolo/pydantic-sqlalchemy/](https://github.com/tiangolo/pydantic-sqlalchemy/)
 - [https://github.com/cookiecutter/cookiecutter](https://github.com/cookiecutter/cookiecutter)
 
 ## Getting started with this template
@@ -23,13 +32,13 @@ $ cookiecutter gh:iancleary/pypackage
 
 ## Features
 
-- Poetry (virtual environment and publish, all with one tool)
+- Poetry (virtual environment and publish to PyPi, all with one tool)
 - black (linting/formatter)
 - autoflake (removing unused packages)
 - isort (dependency organization)
 - mypy (static type checking)
 - pytest (including test coverage)
-- travis-ci for CI/CD
+- GitHub Actions for CI/CD
 - mkdocs for documentation (with material theme)
 
 Only **Python 3.6+** is supported as required by the black, pydantic packages
@@ -38,18 +47,55 @@ Only **Python 3.6+** is supported as required by the black, pydantic packages
 
 ## Publishing to Pypi
 
-Login to pypi and create a token.
+### Poetry's documentation
+
+Note that it is recommended to use [API tokens](https://pypi.org/help/#apitoken) when uploading packages to PyPI.
+
+>Once you have created a new token, you can tell Poetry to use it:
 
 <https://python-poetry.org/docs/repositories/#configuring-credentials>
 
-```bash
-POETRY_PYPI_TOKEN_PYPI=my-token
+We do this using GitHub Actions' Workflows and Repository Secrets!
+
+### Repo Secrets
+
+Go to your repo settings and add a `PYPI_TOKEN` environment variable:
+
+![Github Actions setup of Poetry token environment variable](images/Github-Secrets-PYPI_TOKEN-Setup.png)
+
+### Inspect the GitHub Actions Publish Workflows
+
+```yml
+name: Publish
+
+on:
+  release:
+    types:
+      - created
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      ...
+      ...
+      ...
+      - name: Publish
+        env:
+          PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
+        run: |
+          poetry config pypi-token.pypi $PYPI_TOKEN
+          poetry config repositories.pypi https://test.pypi.org/simple/
+          bash scripts/publish.sh
 ```
 
-Login to travis-ci.com to add an environment variable:
+> That's it!
 
-![Travis-CI setup of Poetry token environment variable](images/travis-ci_poetry-env-variable.png)
+When you make a release on GitHub, the publish workflow will run and deploy to PyPi! 🚀🎉😎
 
 ## Contributing Guide
 
-See the [Contributing Guide](CONTRIBUTING.md) and welcome!
+Welcome! 😊👋
+
+> Please see the [Contributing Guide](CONTRIBUTING.md).
