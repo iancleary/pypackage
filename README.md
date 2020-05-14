@@ -95,7 +95,8 @@ jobs:
 
 When you make a release on GitHub, the publish workflow will run and deploy to PyPi! 🚀🎉😎
 
-> The GitHub Actions for the top level intentionally on build, which demonstrates the publish workflow.
+> The [publish.yml](./github/workflows/publish.yml) GitHub Workflow for [this repo](https://github.com/iancleary/pypackage) intentionally only builds the package.
+> The limited purpose is to demonstrate the publish workflow trigger and allow you to inspect the file's similarity to the equivalent file within the cookiecutter.
 
 ## Contributing Guide
 
