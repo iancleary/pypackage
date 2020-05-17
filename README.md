@@ -38,6 +38,7 @@ $ cookiecutter gh:iancleary/pypackage
 - isort (dependency organization)
 - mypy (static type checking)
 - pytest (including test coverage)
+- [pre-commit](https://pre-commit.com/) (hooks on commit)
 - GitHub Actions for CI/CD
 - mkdocs for documentation (with material theme)
 

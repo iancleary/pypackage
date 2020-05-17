@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## Added
+
+- - [pre-commit](https://pre-commit.com/) (hooks on commit) per [#20](https://github.com/iancleary/pypackage/pull/20)
+
 ## [0.4.3] - 2020-05-13
 
 ### Removed
