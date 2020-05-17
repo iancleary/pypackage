@@ -42,3 +42,5 @@ jobs:
         run: poetry install
       - name: Test
         run: poetry run bash scripts/test.sh
+      - name: Pre-commit
+        run: poetry run pre-commit run --all-files
