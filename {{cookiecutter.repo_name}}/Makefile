@@ -31,6 +31,10 @@ python-three-eight: ## setup python3.6 virtual environment using poetry
 	poetry env use python3.8
 	poetry install
 
+pre-commit:
+pre-commit:  ## setup pre-commit within poetry
+	poetry run pre-commit install
+
 lint: ## lint the code
 lint:
 	bash scripts/lint.sh
