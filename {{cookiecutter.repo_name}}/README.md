@@ -11,6 +11,9 @@
 <a href="https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}/actions?query=workflow%3APublish" target="_blank">
     <img src="https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}/workflows/Publish/badge.svg" alt="Publish">
 </a>
+<a href="https://dependabot.com/" target="_blank">
+    <img src="https://flat.badgen.net/dependabot/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}?icon=dependabot" alt="Dependabot Enabled">
+</a>
 <a href="https://codecov.io/gh/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}" target="_blank">
     <img src="https://img.shields.io/codecov/c/github/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}?color=%2334D058" alt="Coverage">
 </a>

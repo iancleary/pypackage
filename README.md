@@ -11,6 +11,9 @@
 <a href="https://github.com/iancleary/pypackage/actions?query=workflow%3APublish" target="_blank">
     <img src="https://github.com/iancleary/pypackage/workflows/Publish/badge.svg" alt="Publish">
 </a>
+<a href="https://dependabot.com/" target="_blank">
+    <img src="https://flat.badgen.net/dependabot/iancleary/pypackage?icon=dependabot" alt="Dependabot Enabled">
+</a>
 </p>
 
 ## The Basic Idea
