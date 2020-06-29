@@ -9,7 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- - [pre-commit](https://pre-commit.com/) (hooks on commit) per [#20](https://github.com/iancleary/pypackage/pull/20)
+- [pre-commit](https://pre-commit.com/) (hooks on commit) per [#20](https://github.com/iancleary/pypackage/pull/20)
+- Dependabot badge
 
 ### Removed
 
