@@ -1,0 +1,25 @@
+version: 2
+updates:
+- package-ecosystem: pip
+  directory: "/"
+  schedule:
+    interval: monthly
+    time: "12:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: pre-commit
+    versions:
+    - 2.10.0
+- package-ecosystem: pip
+  directory: "/{{cookiecutter.repo_name}}"
+  schedule:
+    interval: monthly
+    time: "12:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: mkdocs-material
+    versions:
+    - 7.0.0
+  - dependency-name: mypy
+    versions:
+    - "0.800"
