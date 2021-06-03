@@ -1,4 +1,6 @@
-# pypackage
+# ARCHIVED, pypackage
+
+I no longer with to maintain this cookiecutter, please see [br3ndonland/template-python](https://github.com/br3ndonland/template-python)'s template. While not a cookiecutter at the time of this writing, it has the tooling I was going for :)
 
 <p align="center">
     <em>Rapid python package setup with modern venv, dependencies, testing, docs, and CI</em>
